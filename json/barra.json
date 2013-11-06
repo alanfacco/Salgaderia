@@ -1,0 +1,25 @@
+[
+    {"texto": "Pastel Doce", "link": "#pasteldoce", "subitem": [
+            {"texto": "Brigadeiro", "link": "#brigadeiro"},
+            {"texto": "Beijinho", "link": "#beijinho"},
+            {"texto": "Prestígio", "link": "#prestigio"}
+        ]},
+    {"texto": "Pastel Salgado", "link": "#pastelsalgado", "subitem": [
+            {"texto": "Carne", "link": "#carne"},
+            {"texto": "Queijo", "link": "#queijo"},
+            {"texto": "Palmito", "link": "#palmito"},
+            {"texto": "Cigarrete", "link": "#cigarrete"}
+        ]},
+    {"texto": "Bebidas", "link": "#bebidas", "subitem": [
+            {"texto": "Refrigerante", "link": "#refrigerante"},
+            {"texto": "Água", "link": "#água"},
+            {"texto": "Sucos", "link": "#sucos"},
+            {"texto": "Cervejas", "link": "#cervejas"}
+        ]},
+    {"texto": "Bomboniere", "link": "#bomboniere", "subitem": [
+            {"texto": "Balas", "link": "#balas"},
+            {"texto": "Chicletes", "link": "#chicletes"},
+            {"texto": "Bombons", "link": "#bombons"},
+            {"texto": "Chocolates", "link": "#cocolates"}
+        ]}
+]

@@ -1,0 +1,109 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <style type="text/css">
+            *, *:after, *:before{
+                box-sizing: border-box;
+            }
+            @font-face{
+                font-family: 'Droid Sans';
+                font-style: normal;
+                font-weight: 400;
+                src: local('Droid Sans'), url(font/DroidSans.woff) format('woff');    
+            }
+            root, nav, section, article, header, footer, figure { 
+                display: block;
+            }
+            ::selection{
+                color: #fff;
+                background: #e53f39;
+            }
+            body{
+                margin: 0;
+                padding: 0;
+                background: #e53f39;
+                color: #000;
+                font-family: 'Droid Sans', 'Arial', 'Helvetica', 'sans-serif';
+                font-size: 100%;
+            }
+            p{font-size: 1em;}
+            h1{font-size: 3em;}
+            h2{font-size: 2.75em;}
+            h3{font-size: 2.5em;}
+            h4{font-size: 2.25em;}
+            h5{font-size: 2em;}
+            h6{font-size: 1.75em;}
+            p, h1, h2, h3, h4, h5, h6{
+                padding: 0;
+                margin: 0;
+            }
+            .painel{
+                width: 20%;
+                display: inline-block;
+                vertical-align: top;
+            }
+            .painel ul{
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+            .painel li{
+                list-style-type: none;
+                display: inline;
+            }
+            .painel a{
+                color: #fff;
+                background: #e53f39;
+                text-decoration: none;
+                display: block;
+                padding: .5em 0 .5em 1em;
+            }
+            .painel li ul li a:hover{
+                background: #fff;
+                color: #ad2626;
+            }
+            .painel>ul>li>a{
+                color: #fff547;
+                background: #ad2626;
+                padding: 1em 0 1em 1em;
+            }
+
+        </style>
+    </head>
+    <body>
+        <aside class="painel"><!--
+            --><ul><!--
+                --><li><a href="#categoria1">Categoria 1</a><!--
+                    --><ul><!--
+                        --><li><a href="#item1">Item 1</a></li><!--
+                        --><li><a href="#item2">Item 2</a></li><!--
+                        --><li><a href="#item3">Item 3</a></li><!--
+                        --><li><a href="#item4">Item 4</a></li><!--
+                        --></ul><!--
+                    --></li><!--
+                --><li><a href="#categoria1">Categoria 1</a><!--
+                    --><ul><!--
+                        --><li><a href="#item1">Item 1</a></li><!--
+                        --><li><a href="#item2">Item 2</a></li><!--
+                        --><li><a href="#item3">Item 3</a></li><!--
+                        --><li><a href="#item4">Item 4</a></li><!--
+                        --></ul><!--
+                    --></li><!--
+                --><li><a href="#categoria1">Categoria 1</a><!--
+                    --><ul><!--
+                        --><li><a href="#item1">Item 1</a></li><!--
+                        --><li><a href="#item2">Item 2</a></li><!--
+                        --><li><a href="#item3">Item 3</a></li><!--
+                        --><li><a href="#item4">Item 4</a></li><!--
+                        --></ul><!--
+                    --></li><!--
+                --></ul><!--
+            --></aside>
+    </body>
+</html>

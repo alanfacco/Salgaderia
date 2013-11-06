@@ -1,0 +1,86 @@
+textarea{
+    font-family: 'Droid Sans', 'Arial', 'Helvetica', 'sans-serif';   
+}
+input, textarea, select{
+    width: 100%;
+    margin-top: .5em; 
+    padding: .5em;
+    border: .1em solid #999;
+    background: #fff;
+    color: #000;
+    display: block;
+    border-radius: .3em;
+    font-size: 1em;
+}
+span~input{
+    width: 90%;
+    display: inline-block;
+}
+span.moeda{
+    width: 10%;
+    display: inline-block;
+}
+input:focus, textarea:focus, select:focus, input[type=checkbox]:after:focus,
+input:hover, textarea:hover, select:hover, input[type=checkbox]:after:hover{
+    outline: none;
+    box-shadow: 0 0 .5em #fff547;
+}
+
+form :required:valid{
+    box-shadow: 0 0 .5em #6c6;
+}
+
+form :required:focus:invalid{
+    box-shadow: 0 0 .5em #e53f39;
+}
+
+option{padding: .5em;}
+
+input[type=checkbox]{
+    display: inline-block;
+    width: 1.3em;
+    height: 1.4em;
+    margin: 1em 0 0.5em 0;
+    position: absolute;
+    font-size: 1em;
+}
+input[type=checkbox]~label{
+    padding-left: 1.5em;
+}
+input[type=checkbox]:after{
+    content: ' ';
+    display: inline-block;
+    width: 1.3em;
+    height: 1.4em;
+    background: #fff;
+    border: 1px solid #999;
+    border-radius: .3em;
+}
+input[type=checkbox]:checked:after{
+    content: '\2714';
+    background: #fff;
+    border: 1px solid #999;
+    padding: .1em .2em;
+}
+label{
+    width: 100%;
+    display: inline-block;
+    padding: .5em 0;
+    margin-top: .5em;
+    color:#000;
+}
+button{
+    padding:.5em 1em;
+    font-size: 1em;
+    border-radius: .3em;
+    background: #fff;
+    margin-top: .5em;
+    border: none;
+    box-shadow: inset 0 0 .5em #fff547, 0 0 .2em #000;
+}
+.direita{
+    text-align: right;
+}
+.titulo{
+    text-align: center;
+}

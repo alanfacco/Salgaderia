@@ -1,0 +1,73 @@
+::selection{
+    background: #fff;
+    color: #e53f39;
+}
+body{
+    color: #e53f39;
+    background: #dedede;
+    text-shadow: 0 0 .2em rgba(0,0,0,.1);
+}
+.topo{
+    background-color: #fff;
+}
+.topo-logo-texto{
+    color: #e53f39;
+}
+.topo-logo-descricao{
+    color: #000;
+}
+.topo-menu ul li a{
+    background: #fff;
+    color: #e53f39;
+}
+.topo-menu ul li:hover>a, .topo-menu ul li:focus>a{
+    background: #e53f39;
+    color: #fff;
+}
+.painel a{
+    background: #fff;
+    color: #e53f39;
+}
+.painel li ul li a:hover{
+    color: #fff;
+    background: #ad2626;
+}
+.painel>ul>li>a{
+    background: #e53f39;
+    color: #fff;
+    font-weight: 700;
+}
+.content a{
+    color: #000;
+}
+.content-illustred{
+    background-color: #fff;
+}
+.content-illustred-title{
+    color: #e53f39;
+    text-shadow: 0 0 1em #fff;
+}
+.content-illustred-description{
+    background: #e53f39;
+    color: #fff;
+}
+.content-non-illustred{
+    background: #fff;
+}
+.content-non-illustred-title{
+    color: #fff;
+    background: #e53f39;
+}
+.content-non-illustred-description{
+    color: #000;
+}
+.content-thumb{
+    background-color: #fff;
+}
+.content-thumb-title{
+    color: #e53f39;
+    text-shadow: 0 0 1em #fff;
+}
+.rodape{
+    color: #e53f39;
+}

@@ -1,0 +1,122 @@
+@media screen and (max-width: 1024px){
+    .destaque-detalhe{
+        width: 33%;
+    }
+    .topo-menu ul li a{
+        padding: 2em 2.5em;
+    }
+}
+@media screen and (max-width: 768px) {
+    .topo-menu{
+        display: block;
+        position: relative;
+        top: 0;
+        width: 100%;
+        z-index: 3;
+    }
+    .topo-menu:before{
+        content: '\25BC';
+        display: block;
+        color: #fff;
+        padding: 2em 4em;
+        position: absolute;
+        right: 1em;
+        top: -5em;
+        line-height: 1.1em;
+    }
+    .topo-menu ul{
+        display: none;
+        position: absolute;
+        width: 100%;
+        top: 100%;
+        right: 0;
+        white-space: nowrap;
+    }
+    .topo-menu ul li{
+        display: block;
+    }
+    .topo-menu ul li a{
+        padding: 1em 1.8em;
+    }
+    .topo-menu:hover>ul,.topo-menu:focus>ul{
+        display: block;
+    }
+    .topo-menu li:hover ul{
+        display: none;
+    }
+    .destaque{
+        height: 18em;
+    }
+    .destaque-titulo{
+        font-size: 2em;
+    }
+    .destaque-detalhe{
+        width: 50%;
+    }
+    .pagination {
+        text-align: right;
+    }
+    .painel{
+        display: none;
+    }
+    .content{
+        width: 100%;
+    }
+    .content-col{
+        width: 100%;
+    }
+    .content-half-col{
+        width: 50%;
+    }
+    .content-extend-col{
+        width: 100%;
+    }
+    .content-extend-col~.content-half-col{
+        width: 100%;
+    }
+    .content-half-col label{
+        text-align: left;
+    }
+}
+@media screen and (max-width: 480px){
+    .topo-menu:before{
+        padding: 2em 1em;
+    }
+    .destaque-detalhe{
+        width: 100%;
+        left: 0;
+        bottom: .3em;
+    }
+    .destaque{
+        font-size: .8em;
+    }
+    .destaque-titulo{
+        font-size: 2em;
+    }
+    .pagination {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 320px){
+    .topo-menu:before{
+        right: .3em;
+    }
+    .content-half-col{
+        width: 100%;
+    }
+    .content-illustred{
+        font-size: .8em;
+    }
+    .content-non-illustred{
+        font-size: .8em;
+    }
+    .content-non-illustred-description{
+        font-size: 1.2em;
+    }
+    .content-thumb{
+        font-size: .8em;
+    }
+    .content-thumb-title{
+        padding: 3em .5em 0 .5em;
+    }
+}

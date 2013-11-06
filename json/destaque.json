@@ -1,0 +1,26 @@
+[
+    {
+        "titulo": "Frango com Catupiry",
+        "link": "#frangocomcatupiry",
+        "imagem": "imagens/frangocomcatupiry.jpg",
+        "descricao": "Pastel recheado com frango temperado e desfiado, com requeijão cremoso tipo catupiry.",
+        "precoreal": 2,
+        "precocentavos": 50
+    },
+    {
+        "titulo": "Banana com Canela",
+        "link": "#bananacomcanela",
+        "imagem": "imagens/bananacomcanela.jpg",
+        "descricao": "Pastel recheado com fatias de banana, com uma pitada de canela,  coberto com açúcar refinado.",
+        "precoreal": 1,
+        "precocentavos": 90
+    },
+    {
+        "titulo": "Carne Seca com Mussarela",
+        "link": "#carnesecacommussarela",
+        "imagem": "imagens/carnesecacommussarela.jpg",
+        "descricao": "Pastel recheado com carne seca desfiada e fatia de mussarela.",
+        "precoreal": 2,
+        "precocentavos": 50
+    }
+]

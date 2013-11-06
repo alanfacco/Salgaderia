@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" />
+        <link rel="stylesheet" type="text/css" href="css/estilo.css">
+        <link rel="stylesheet" type="text/css" href="css/responsive.css">
+        <link rel="stylesheet" type="text/css" href="css/animations.css">
+        <!--[if lt IE 9]>
+        <script src="js/html5shiv.js" type="text/javascript"></script>
+        <![endif]-->
+        <script src="js/jquery-2.0.3.js" type="text/javascript"></script>
+        <!--[if lt IE 9]>
+        <script src="js/jquery-1.10.2.js" type="text/javascript"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <nav class="topo-menu"><!--
+            --><ul><!--
+                --><li><a href="#aempresa">A empresa</a></li><!--
+                --><li><a href="#cardapio">Cardápio</a><!--
+                    --><ul><!--
+                        --><li><a href="#pasteldoce">Pastel Doce</a><!--
+                            --><ul><!--
+                                --><li><a href="#brigadeiro">Brigadeiro</a></li><!--
+                                --><li><a href="#beijinho">Beijinho</a></li><!--
+                                --><li><a href="#prestigio">Prestígio</a></li><!--
+                                --></ul><!--
+                            --></li><!--
+                        --><li><a href="#pastelsalgado">Pastel Salgado</a><!--
+                            --><ul><!--
+                                --><li><a href="#carne">Carne</a></li><!--
+                                --><li><a href="#Queijo">Queijo</a></li><!--
+                                --><li><a href="#Palmito">Palmito</a></li><!--
+                                --></ul><!--
+                            --></li><!--
+                        --><li><a href="#bebidas">Bebidas</a><!--
+                            --><ul><!--
+                                --><li><a href="#refrigerante">Refrigerante</a></li><!--
+                                --><li><a href="#agua">Água</a></li><!--
+                                --><li><a href="#suco">Suco</a></li><!--
+                                --></ul><!--
+                            --></li><!--
+                        --><li><a href="#bomboniere">Bomboniere</a></li><!--
+                        --></ul><!--
+                    --></li><!--
+                --><li><a href="#fotos">Fotos</a></li><!--
+                --><li><a href="#contatos">Contatos</a></li><!--
+                --></ul><!--
+            --></nav>
+        <script>
+            var url = "json/menu.json";
+
+            $.getJSON(url, function(data) {
+                $("nav.topo-menu>ul").html(treeArray(data));
+            });
+            function treeArray(data) {
+                var item = '';
+                $.each(data, function(k, v) {
+                    //console.log('id ' + k);
+                    item += '<li><a href="' + v.link + '">' + v.texto + '</a>';
+                    //console.log('chave: ' + v.texto);
+                    //console.log('valor: ' + v.link);
+                    if (v.subitem) {
+                        item += '<ul>';
+                        //console.log('-----subitem------');
+                        item += treeArray(v.subitem);
+                        item += '</ul>';
+                    }
+                    item += '</li>';
+                });
+                return item;
+            }
+        </script>
+    </body>
+</html>

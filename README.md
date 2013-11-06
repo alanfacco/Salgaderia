@@ -1,0 +1,4 @@
+Salgaderia
+==========
+
+Controle de caixa
